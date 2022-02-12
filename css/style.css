@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 1s;
+  font-size: 14px;
+  line-height: 16px;
+}
+a:hover {
+  color: #344b75;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+html,
+body {
+  /*сброс стандартного браузерского шрифта с 16px на 10px
+  чтобы 1rem == 10px*/
+  font-size: 62.5%;
+}
+body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6.4rem 0;
+}
+.container {
+  width: 113.5rem;
+  margin: 0 auto;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 7.9rem;
+  height: 2.8rem;
+}
+.header__list,
+.social__list,
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list li:not(:last-child),
+.footer__list li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.social__list li:not(:last-child) {
+  margin-right: 2.1rem;
+}
+.social__link svg {
+  width: 1.7rem;
+  height: 1.6rem;
+  fill: white;
+  transition: 1s;
+}
+.social__link svg:hover {
+  fill: #344b75;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #030102;
+  padding: 2rem 0;
+}
+.footer__copy p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
